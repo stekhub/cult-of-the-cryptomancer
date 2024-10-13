@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cult of the Cryptomancer</title>
+
+    <meta name="robots" content="noindex">
+
+    <link rel="stylesheet" href="styles/styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="scripts/web3.min.js"></script>
+    <script src="scripts/loadingoverlay.min.js"></script>
+    <script src="scripts/variables.js"></script>
+    <script src="scripts/ui.js"></script>
+    <script src="scripts/metamask.js"></script>
+    <script src="scripts/restclient.js"></script>
+
+    <script type="application/javascript">
+        $(function() {
+            createGameSession();
+        });
+    </script>
+
+</head>
+<body>
+    <div class="container"></div>
+    <div class="container">
+        <textarea placeholder="" id="textArea" spellcheck="false"></textarea>
+        <div class="input-container">
+            <input type="text" placeholder="Message" id="userInput" maxlength="150" spellcheck="false">
+            <input type="submit" value="Send" class="submitButton" id="submitButton">
+        </div>
+    </div>
+    <div class="container"><img src="/images/avatar.png" alt="Cryptomancer" id="avatar"></div>
+</body>
+</html>
